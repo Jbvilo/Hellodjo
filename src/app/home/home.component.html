@@ -1,4 +1,10 @@
-<img src="../../assets/hellodjo-logo.jpg" class="logo"/>
+<img *ngIf="!mobile" src="../../assets/hellodjo-logo.jpg" class="logo"/>
+ 
+<div *ngIf="mobile" style="display: inline-flex;justify-content: space-between;width: 100%;">
+    <img src="../../assets/hellodjo-logo.jpg" class="logo"/>
+    <img src="../../assets/bricoleur.png" style="height:60px;"/>
+</div>
+
 <br>
 <div class="content"> 
     <div style="text-align: center;">
