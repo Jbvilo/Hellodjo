@@ -4,12 +4,13 @@
     <div style="text-align: center;">
         <img src="../../assets/hellodjo-logo.jpg" class="imghome"/>
         <div class="text" > Une prise à changer ? Une serrure à remplacer ? 
-            Un WC à changer ? Ne vous inquiétez pas, 
+            Un WC à changer ?
+           <div *ngIf="mobile"> <br></div> Ne vous inquiétez pas, 
             Djo vous trouve une solution pour vos 
             petits travaux à réaliser à votre domicile. <br>
-            Pour effectuer votre demande, rien de plus simple:
+            <div *ngIf="mobile"> <br></div> Pour effectuer votre demande, rien de plus simple:
         </div>
-        <br><br>
+        <br><div *ngIf="!mobile"> <br></div>
         <div class="button">
             <div class="buttontext">
                 Demander un devis
