@@ -19,7 +19,6 @@ export class HomeComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    console.log(event.target.innerWidth)
     if(event.target.innerWidth <= 960) {
       this.mobile = true
     }
